@@ -1,4 +1,4 @@
-# failure-llm-unlearning-reproduction
+# Failure-LLM-Unlearning-Reproduction
 
 Independent reproduction of *Catastrophic Failure of LLM Unlearning via Quantization* (ICLR 2025) on MUSE, with
 GPTQ/AWQ stress tests of SURE and an audit of its released implementation.
