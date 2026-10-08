@@ -138,3 +138,10 @@ If you use this work, please cite the original paper and the MUSE benchmark:
   year    = {2024}
 }
 ```
+
+## License
+
+Code is MIT-licensed (see [`LICENSE`](LICENSE)), except `extra/unlearn_run.py` lines 250–332 (the function
+`_fast_sure_compute_loss`), which reproduce `SURE.compute_loss` from
+[FailureLLMUnlearning](https://github.com/zzwjames/FailureLLMUnlearning/tree/10131ae25f55f1d8feb744eabb235ffc3f094b1b)
+(no licence) and remain the authors'.
