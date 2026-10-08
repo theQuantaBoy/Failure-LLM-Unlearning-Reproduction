@@ -1,0 +1,2 @@
+Corpus,Model,Tag,M2 BF16 (authors' loader),M2 FP32 (diagnostic),FP32 − BF16,paper M2 (MUSE-copied),FP32 − paper
+books,target,fp32diag_knowmem,46.7010054122123,45.87905150405149,-0.8219539081608076,59.4,-13.52094849594851

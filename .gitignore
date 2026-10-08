@@ -1,0 +1,23 @@
+# Allowlist: ignore everything at the top level, then re-include only what belongs in the repository.
+/*
+
+!/.gitignore
+!/README.md
+!/REPORT.md
+!/FINDINGS.md
+!/Reproducibility.md
+!/COMMANDS.md
+!/compare_results.py
+!/modal_app.py
+!/modal_quant.py
+!/extra/
+!/tables/
+!/train_configs/
+!/evidence/
+
+# Never wanted inside the allowed folders
+__pycache__/
+*.pyc
+/extra/tests/_out/
+/extra/tests/_out_*.log
+/extra/where_index.py

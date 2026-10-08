@@ -1,0 +1,159 @@
+{
+  "kind": "test",
+  "name": "sure_equivalence_books_npo_klr_sure",
+  "status": "ok",
+  "start": "2026-10-03 19:14:02 UTC",
+  "argv": [
+    "/root/proj/extra/tests/test_sure_equivalence.py",
+    "--preset",
+    "books_npo_klr_sure",
+    "--steps",
+    "20",
+    "--model_dir",
+    "/vol/hf/hub/models--muse-bench--MUSE-books_target/snapshots/c8dd3fb23a726762ec66d277933c7cff6767f3c2",
+    "--tokenizer_dir",
+    "/vol/hf/hub/models--meta-llama--Llama-2-7b-hf/snapshots/01c7f73d771dfac7d292323805ebc428287df4f9",
+    "--work_dir",
+    "/vol/runs/smoke/books_npo_klr_sure",
+    "--logs_dir",
+    "/vol/runs/logs",
+    "--delete_weights"
+  ],
+  "config": {
+    "preset": "books_npo_klr_sure",
+    "steps": 20,
+    "model_dir": "/vol/hf/hub/models--muse-bench--MUSE-books_target/snapshots/c8dd3fb23a726762ec66d277933c7cff6767f3c2",
+    "tokenizer_dir": "/vol/hf/hub/models--meta-llama--Llama-2-7b-hf/snapshots/01c7f73d771dfac7d292323805ebc428287df4f9",
+    "work_dir": "/vol/runs/smoke/books_npo_klr_sure",
+    "logs_dir": "/vol/runs/logs",
+    "delete_weights": true,
+    "passthrough": ""
+  },
+  "repo_rev": "10131ae25f55f1d8feb744eabb235ffc3f094b1b",
+  "versions": {
+    "python": "3.10.17",
+    "torch": "2.2.0+cu121",
+    "transformers": "4.40.0",
+    "accelerate": "0.29.0",
+    "bitsandbytes": "0.43.0",
+    "datasets": "2.19.0",
+    "tokenizers": "0.19.0",
+    "numpy": "1.26.0",
+    "scipy": "1.13.0",
+    "scikit-learn": "1.4.0",
+    "rouge-score": "0.1",
+    "nltk": "3.9.1",
+    "huggingface-hub": "0.26.1",
+    "safetensors": "0.4.5"
+  },
+  "gpu": {
+    "cuda": "12.1",
+    "devices": [
+      "NVIDIA H200"
+    ]
+  },
+  "host": "modal",
+  "verdict": {
+    "D2_optimizer_step_calls": {
+      "A": 0,
+      "B": 0,
+      "C": 0
+    },
+    "D2_rows_changed_outside_mask_total": 881089,
+    "D2_mask_is_dead_code": true,
+    "D3_diff_B_vs_A (noise floor)": {
+      "elements_differing": 3868525620,
+      "elements_total": 6738415616,
+      "tensors_differing": 235,
+      "max_abs_diff": 0.0028076171875
+    },
+    "D3_diff_C_vs_A (fast vs original)": {
+      "elements_differing": 3301185311,
+      "elements_total": 6738415616,
+      "tensors_differing": 235,
+      "max_abs_diff": 0.002197265625
+    },
+    "D3_pass": true,
+    "losses_per_step": {
+      "A": [
+        13.8629,
+        14894.3174,
+        6797.6372,
+        7684.8999,
+        10477.9014,
+        18236.1133,
+        9633.958,
+        10313.2598,
+        9227.8672,
+        7936.3921,
+        8323.667,
+        9550.918,
+        6018.6797,
+        13339.7432,
+        16893.1055,
+        18310.918,
+        12917.7051,
+        14695.3711,
+        10599.8477,
+        12273.1152
+      ],
+      "B": [
+        13.8629,
+        14955.0283,
+        6824.6851,
+        7357.5835,
+        10482.2324,
+        17409.1523,
+        9982.1729,
+        9780.4521,
+        6446.8335,
+        8048.7866,
+        9064.4707,
+        9616.2998,
+        7300.6875,
+        12821.2744,
+        18707.7363,
+        18928.5332,
+        12609.417,
+        15237.2109,
+        8839.7217,
+        11077.8438
+      ],
+      "C": [
+        13.8629,
+        14906.2441,
+        6777.9512,
+        7659.354,
+        10576.9219,
+        18407.9414,
+        9695.7617,
+        10184.7363,
+        9547.6973,
+        8119.0659,
+        8454.1387,
+        9632.7393,
+        5875.3716,
+        13717.3047,
+        17605.9609,
+        18516.873,
+        12881.6152,
+        14965.5078,
+        10882.5732,
+        11735.6123
+      ]
+    },
+    "s_per_step": {
+      "A": 4.272,
+      "B": 2.873,
+      "C": 1.434
+    },
+    "peak_gpu_mem_gb": {
+      "A": 98.43,
+      "B": 98.43,
+      "C": 97.91
+    }
+  },
+  "exit_code": 0,
+  "end": "2026-10-03 19:22:34 UTC",
+  "minutes": 8.53
+}

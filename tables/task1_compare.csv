@@ -1,0 +1,19 @@
+Row,Source,M1 ↓,M2 ↓,M3 → 0,M4 ↑
+Original target · BF16,Reported (Table 1),58.4,63.9,-99.8,55.2
+,Reproduced,43.5 (58.2),64.3,-99.8,54.6
+,Δ,-14.9†,+0.4,0.0,-0.6
+Original target + RTN · INT4,Reported (Table 1),34.2,54.4,-99.8,48.2
+,Reproduced,35.5 (46.8),52.2,-99.8,46.7
+,Δ,+1.3,-2.2,0.0,-1.5
+NPO_KLR · BF16,Reported (Table 1),16.6,36.6,-94.0,33.3
+,Reproduced,15.9 (15.0),37.1,-93.9,33.9
+,Δ,-0.7,+0.5,+0.1,+0.6
+NPO_KLR + RTN · INT4,Reported (Table 1),34.1,53.7,-99.8,48.8
+,Reproduced,34.6 (44.4),50.1,-99.8,47.7
+,Δ,+0.5,-3.6,0.0,-1.1
+GA_GDR · BF16,Reported (Table 1),0.0,28.9,87.1,34.2
+,Reproduced,0.0 (0.0),27.3,109.5,23.1
+,Δ,0.0,-1.6,+22.4,-11.1
+GA_GDR + RTN · INT4,Reported (Table 1),25.0,50.1,-99.1,47.7
+,Reproduced,22.9 (24.2),50.8,-79.6,43.3
+,Δ,-2.1,+0.7,+19.5,-4.4
